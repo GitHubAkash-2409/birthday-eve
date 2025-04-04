@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
@@ -45,7 +46,7 @@ export default function Home() {
 
       const randomX = Math.floor(Math.random() * 30);
       const randomY = Math.floor(Math.random() * 30);
-      console.log(event);
+      // console.log(event);
       confetti.style.position = "absolute";
       confetti.style.left = `${event.pageX + randomX}px`;
       confetti.style.top = `${event.pageY + randomY}px`;
